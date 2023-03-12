@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Diagnostics;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -188,6 +190,19 @@ namespace Torres_de_Hanoi
 
 
             
+        }
+
+
+
+        public void recursivo(int discos, Pila origen, Pila destino, Pila auxiliar)
+        {
+            recursivo(discos, origen, destino, auxiliar);
+            if (discos > 0)
+            {
+                recursivo(discos - 1, origen, auxiliar, destino);
+                recursivo(discos - 1, auxiliar, destino, origen);
+            }
+                
         }
 
     }

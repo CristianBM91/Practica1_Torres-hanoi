@@ -27,6 +27,7 @@ namespace Torres_de_Hanoi
             if (s.Equals("I") || s.Equals("i"))
             {
                 Hanoi hanoi= new Hanoi();
+                
                 Pila ini = new Pila(n);
                 Pila aux = new Pila();
                 Pila fin = new Pila();
@@ -39,7 +40,7 @@ namespace Torres_de_Hanoi
                 Console.WriteLine("");
                 Console.WriteLine("");
 
-
+                
                 int pasoAnterior = 0;
                 
                 for (int i=0; i< (Math.Pow(2,n))-1; i++)
@@ -64,6 +65,13 @@ namespace Torres_de_Hanoi
             }
             else if (s.Equals("R") || s.Equals("r"))
             {
+                Hanoi hanoi = new Hanoi();
+                Pila ini = new Pila(n);
+                Pila aux = new Pila();
+                Pila fin = new Pila();
+                int contador = 1;
+
+                hanoi.recursivo(n,ini,fin,aux);
 
             }
 
