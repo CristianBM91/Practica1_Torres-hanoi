@@ -40,7 +40,7 @@ namespace Torres_de_Hanoi
                 
             }
             this.Top = 1;
-
+            //
         }
 
         public void push(Disco d)
