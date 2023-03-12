@@ -10,8 +10,59 @@ namespace Torres_de_Hanoi
     {
         static void Main(string[] args)
         {
-
             // Keep the console window open in debug mode.
+
+            Console.WriteLine("TORRES DE HANOI");
+            Console.WriteLine("3 torres");
+            Console.WriteLine("");
+            Console.WriteLine("Introduce el numero de discos:");
+            int n = Int16.Parse(Console.ReadLine());
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("Has seleccionado " + n + " discos");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("Indica I para iterativo y R para recursivo");
+            string s = Console.ReadLine();
+            if (s.Equals("I") || s.Equals("i"))
+            {
+                Hanoi hanoi= new Hanoi();
+                Pila ini = new Pila(n);
+                Pila aux = new Pila();
+                Pila fin = new Pila();
+                int contador = 1;
+
+                Console.WriteLine("Situación INICIAL:");
+                Console.WriteLine("Pila inicial --> " + ini.toString());
+                Console.WriteLine("Pila auxiliar --> " + aux.toString());
+                Console.WriteLine("Pila final --> " + fin.toString());
+                Console.WriteLine("");
+                Console.WriteLine("");
+
+
+                while (fin.Size < n-1)
+                {
+                    hanoi.iterativo(n, ini, fin, aux);
+                    Console.WriteLine("Situación tras el movimiento " + contador + ":");
+                    Console.WriteLine("Pila inicial --> " + ini.toString());
+                    Console.WriteLine("Pila auxiliar --> " + aux.toString());
+                    Console.WriteLine("Pila final --> " + fin.toString());
+                    Console.WriteLine("");
+                    Console.WriteLine("");
+                    Console.WriteLine(ini.Top);
+
+                    contador++;
+                }
+                
+                
+
+            }
+            else if (s.Equals("R") || s.Equals("r"))
+            {
+
+            }
+
+
             Console.WriteLine("Press any key to exit.");
             Console.ReadKey();
         }
