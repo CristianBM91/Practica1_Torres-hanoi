@@ -196,13 +196,19 @@ namespace Torres_de_Hanoi
 
         public void recursivo(int discos, Pila origen, Pila destino, Pila auxiliar)
         {
-            recursivo(discos, origen, destino, auxiliar);
+            mover_disco(origen,destino);
+            
             if (discos > 0)
             {
                 recursivo(discos - 1, origen, auxiliar, destino);
                 recursivo(discos - 1, auxiliar, destino, origen);
             }
-                
+            Console.WriteLine("Pila inicial --> " + origen.toString());
+            Console.WriteLine("Pila auxiliar --> " + auxiliar.toString());
+            Console.WriteLine("Pila final --> " + destino.toString());
+            Console.WriteLine("");
+            Console.WriteLine("");
+
         }
 
     }

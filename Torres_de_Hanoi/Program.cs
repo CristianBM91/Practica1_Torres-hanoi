@@ -69,9 +69,12 @@ namespace Torres_de_Hanoi
                 Pila ini = new Pila(n);
                 Pila aux = new Pila();
                 Pila fin = new Pila();
-                int contador = 1;
+                
 
                 hanoi.recursivo(n,ini,fin,aux);
+                
+                
+
 
             }
 
