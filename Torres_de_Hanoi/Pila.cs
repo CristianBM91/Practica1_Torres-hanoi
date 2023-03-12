@@ -45,30 +45,45 @@ namespace Torres_de_Hanoi
 
         public void push(Disco d)
         {
-            this.Elementos.Add(d);
-            this.Size++;
-            this.Top = d.Valor;
+            if (this.Size == 0)
+            {
+                this.Elementos.Add(d);
+                this.Size++;
+                this.Top = d.Valor;
+            }
+            else if(d.Valor < this.Elementos[this.Size - 1].Valor)
+            {
+                this.Elementos.Add(d);
+                this.Size++;
+                this.Top = d.Valor;
+            }
+            
         }
 
         public Disco pop()
         {
             Disco disco = new Disco();
-            
+            if (this.Size > 1)
+            {
+                
                 disco = this.Elementos[this.Size - 1];
                 this.Elementos.RemoveAt(this.Size - 1);
                 this.Size--;
-
-            if (this.Size > 0)
-            {
-                this.Top++;
+                this.Top =  this.Elementos[this.Size - 1].Valor; 
+                return disco;
             }
-                   
-                
-            
-            
-            
-            
-            return disco;
+            else if (this.Size == 1)
+            {
+                disco = this.Elementos[this.Size - 1];
+                this.Elementos.RemoveAt(this.Size - 1);
+                this.Size = 0;
+                this.Top = 0;
+                return disco;
+            }
+            else
+            {
+                return disco;
+            }
         }                
 
         public bool isEmpty()

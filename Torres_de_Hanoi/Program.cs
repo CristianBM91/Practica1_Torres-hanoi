@@ -40,16 +40,21 @@ namespace Torres_de_Hanoi
                 Console.WriteLine("");
 
 
-                while (fin.Size < n-1)
+                int pasoAnterior = 0;
+                
+                for (int i=0; i< (Math.Pow(2,n))-1; i++)
                 {
-                    hanoi.iterativo(n, ini, fin, aux);
+                    pasoAnterior = hanoi.iterativo(n, pasoAnterior, ini, fin, aux);
                     Console.WriteLine("Situación tras el movimiento " + contador + ":");
                     Console.WriteLine("Pila inicial --> " + ini.toString());
                     Console.WriteLine("Pila auxiliar --> " + aux.toString());
                     Console.WriteLine("Pila final --> " + fin.toString());
                     Console.WriteLine("");
                     Console.WriteLine("");
-                    Console.WriteLine(ini.Top);
+                   
+
+
+
 
                     contador++;
                 }
