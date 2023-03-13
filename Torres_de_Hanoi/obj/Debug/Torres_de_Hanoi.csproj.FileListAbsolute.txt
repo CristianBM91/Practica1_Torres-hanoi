@@ -6,3 +6,11 @@ C:\Users\Crist\Source\Repos\hanoi\Torres_de_Hanoi\obj\Debug\Torres_de_Hanoi.cspr
 C:\Users\Crist\Source\Repos\hanoi\Torres_de_Hanoi\obj\Debug\Torres_de_Hanoi.csproj.CoreCompileInputs.cache
 C:\Users\Crist\Source\Repos\hanoi\Torres_de_Hanoi\obj\Debug\Torres_de_Hanoi.exe
 C:\Users\Crist\Source\Repos\hanoi\Torres_de_Hanoi\obj\Debug\Torres_de_Hanoi.pdb
+C:\Users\Crist\Source\Repos\torres-hanoi-definitivo\Torres_de_Hanoi\bin\Debug\Torres_de_Hanoi.exe.config
+C:\Users\Crist\Source\Repos\torres-hanoi-definitivo\Torres_de_Hanoi\bin\Debug\Torres_de_Hanoi.exe
+C:\Users\Crist\Source\Repos\torres-hanoi-definitivo\Torres_de_Hanoi\bin\Debug\Torres_de_Hanoi.pdb
+C:\Users\Crist\Source\Repos\torres-hanoi-definitivo\Torres_de_Hanoi\obj\Debug\Torres_de_Hanoi.csproj.AssemblyReference.cache
+C:\Users\Crist\Source\Repos\torres-hanoi-definitivo\Torres_de_Hanoi\obj\Debug\Torres_de_Hanoi.csproj.SuggestedBindingRedirects.cache
+C:\Users\Crist\Source\Repos\torres-hanoi-definitivo\Torres_de_Hanoi\obj\Debug\Torres_de_Hanoi.csproj.CoreCompileInputs.cache
+C:\Users\Crist\Source\Repos\torres-hanoi-definitivo\Torres_de_Hanoi\obj\Debug\Torres_de_Hanoi.exe
+C:\Users\Crist\Source\Repos\torres-hanoi-definitivo\Torres_de_Hanoi\obj\Debug\Torres_de_Hanoi.pdb

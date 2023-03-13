@@ -69,11 +69,18 @@ namespace Torres_de_Hanoi
                 Pila ini = new Pila(n);
                 Pila aux = new Pila();
                 Pila fin = new Pila();
-                
 
-                hanoi.recursivo(n,ini,fin,aux);
-                
-                
+
+                Console.WriteLine("Situación INICIAL:");
+                Console.WriteLine("Pila inicial --> " + ini.toString());
+                Console.WriteLine("Pila auxiliar --> " + aux.toString());
+                Console.WriteLine("Pila final --> " + fin.toString());
+                Console.WriteLine("");
+                Console.WriteLine("");
+
+                hanoi.recursivo(n, ini, fin, aux);
+
+
 
 
             }
